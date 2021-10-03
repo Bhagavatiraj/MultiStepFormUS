@@ -13,6 +13,8 @@ import {
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
+import Sellrequest from "../Sellrequest";
+import Routes from "../Routes";
 
 import styled from "styled-components";
 import MultiStepProgressBar from "./MultiStepProgressBar";
@@ -99,6 +101,7 @@ class MasterForm extends Component {
 
   // Trigger an alert on form submission
   handleSubmit = event => {
+    console.log("hello from submit start")
     event.preventDefault();
 
     const formdata = new FormData();
@@ -108,7 +111,9 @@ class MasterForm extends Component {
       console.log(key, this.state[key]);
 
     }
+    console.log("hello from submit")
     console.log(...formdata);
+    this.props.history.push('/sell');
 
   };
 
@@ -174,8 +179,7 @@ class MasterForm extends Component {
     if (currentStep > 2) {
       return (
         <div class="actionSubmit">
-          <Button style={{ backgroundColor: "#6610f2" }} >Submit</Button>
-
+          <Button style={{ backgroundColor: "#6610f2" }}>Submit</Button>
         </div>
       )
     }

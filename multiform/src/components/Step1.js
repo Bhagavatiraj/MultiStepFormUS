@@ -12,8 +12,8 @@ const Step1 = (props) => {
       <div class="container">
         <div class="row p-6">
           <div class="col-lg-12 mb-5">
-          <FormGroup id="msform">
-            <fieldset>
+          <FormGroup id="msform" >
+            <fieldset >
               <h2 class="fs-title">Car Details</h2>
               <h3 class="fs-subtitle">Tell us about your Car</h3>
 
@@ -28,7 +28,7 @@ const Step1 = (props) => {
               />
 
               <div class="row mb-4">
-                <div class="col">
+                <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                   <div class="form-outline">
                     <input type="text" name="carNumber" placeholder="Car Number"
                      value={props.statess.carnumber} 
@@ -36,7 +36,7 @@ const Step1 = (props) => {
                      />
                   </div>
                 </div>
-                <div class="col">
+                <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                   <div class="form-outline">
                     <input
                       type="text"
@@ -50,14 +50,14 @@ const Step1 = (props) => {
               </div>
 
               <div class="row mb-4">
-                <div class="col">
+                <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                   <div class="form-outline">
                     <input type="text" name="engineSize" placeholder="Engine Size"
                     value={props.statess.engineSize} onChange={props.handleChange}
                     />
                   </div>
                 </div>
-                <div class="col">
+                <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                   <div class="form-outline">
                     <input type="text" name="mileage" placeholder="Mileage" 
                     value={props.statess.mileage} onChange={props.handleChange} 
@@ -67,7 +67,7 @@ const Step1 = (props) => {
               </div>
 
               <div class="row mb-4">
-                <div class="col">
+                <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                   <div class="form-outline">
                     <input type="text" name="make" placeholder="Make" 
                     value={props.statess.make} onChange={props.handleChange}
@@ -75,7 +75,7 @@ const Step1 = (props) => {
                     />
                   </div>
                 </div>
-                <div class="col">
+                <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                   <div class="form-outline">
                     <input type="text" name="model" placeholder="Model" 
                     
@@ -87,14 +87,14 @@ const Step1 = (props) => {
               </div>
 
               <div class="row mb-4">
-                <div class="col">
+                <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                   <div class="form-outline">
                     <input type="text" name="fuelType" placeholder="Fuel Type" 
                     value={props.statess.fuelType} onChange={props.handleChange}
                     />
                   </div>
                 </div>
-                <div class="col">
+                <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                   <div class="form-outline">
                     <input type="text" name="color" placeholder="Color" 
                     value={props.statess.color} onChange={props.handleChange}
@@ -103,7 +103,7 @@ const Step1 = (props) => {
                 </div>
               </div>
               <div class="row mb-4">
-                <div class="col">
+                <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                   <select class="form-outline" onChange={props.handleChange}>
                     <option data-display="Number Of Owners">
                       Number Of Owners
@@ -114,7 +114,7 @@ const Step1 = (props) => {
                   </select>
                 </div>
 
-                <div class="col">
+                <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                   <select class="form-outline" onChange={props.handleChange}>
                     <option data-display="Number Of Seats">Number Of Seats</option>
                     <option value={props.statess.seats}>4</option>

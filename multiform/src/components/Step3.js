@@ -19,14 +19,14 @@ const Step3 = (props) => {
                   Fill in your details for inspection of your car
                 </h3>
                 <div class="row mb-4">
-                  <div class="col">
+                  <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                     <div class="form-outline">
                       <input type="text" name="fname" placeholder="First Name" 
                       value={props.statess.fname} onChange={props.handleChange} 
                       />
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                     <div class="form-outline">
                       <input type="text" name="lname" placeholder="Last Name"
                        value={props.statess.lname} onChange={props.handleChange} 
@@ -58,7 +58,7 @@ const Step3 = (props) => {
                 />
 
                 <div class="row mb-4">
-                  <div class="col">
+                  <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                     <div class="form-outline">
                       <input
                         class="col mb-4"
@@ -69,7 +69,7 @@ const Step3 = (props) => {
                       />
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col" style={{ backgroundColor: "#FFFFFF" }}>
                     <div class="form-outline">
                       <input
                         class="col mb-4"
